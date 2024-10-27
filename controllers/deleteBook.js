@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 const bookModel = require('../models/bookModel');
+
 const deleteBook = async (req, res) => {
   try {
     const deletedBook = await bookModel.findByIdAndDelete(req.params.id);
@@ -11,10 +12,11 @@ const deleteBook = async (req, res) => {
         errors: { details: 'No book found with this ID' },
       });
     }
-    res.status(204).json({
+    res.status(200).json({
       status: 'success',
-      code: 204,
+      code: 200,
       message: 'Book deleted successfully',
+      data: { book: deletedBook },
     });
   } catch (error) {
     res.status(500).json({
