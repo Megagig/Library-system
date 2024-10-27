@@ -63,8 +63,8 @@ An API to manage a library system, where users can: Retrieve a list of all books
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](coming soon)
-- [Live API Documentation Demo Link](https://documenter.getpostman.com/view/26434084/2sAY4skQcM#f6123d3d-c59c-4b58-8e77-aba5d8654a19)
+- [Live Demo Link](https://library-system-api.up.railway.app/)
+- [Live API Documentation Demo Link](https://documenter.getpostman.com/view/26434084/2sAY4skQcM)
 
 <!-- GETTING STARTED -->
 

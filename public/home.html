@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Libaray System API Documentation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100">
+    <header class="bg-white shadow-md">
+      <nav class="container mx-auto px-6 py-3">
+        <div class="flex items-center justify-between">
+          <div class="text-xl font-bold text-gray-800">
+            <a href="/">Libaray System</a>
+          </div>
+          <div>
+            <a href="/" class="text-gray-600 hover:text-gray-800 px-3 py-2"
+              >Home</a
+            >
+            <a href="/docs" class="text-gray-600 hover:text-gray-800 px-3 py-2"
+              >Documentation</a
+            >
+            <a href="#" class="text-gray-600 hover:text-gray-800 px-3 py-2"
+              >Support</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container mx-auto px-6 py-8">
+      <section class="text-center mb-12">
+        <h1 class="text-4xl font-bold text-gray-800 mb-4">
+          Welcome to Libaray System API Documentation
+        </h1>
+        <p class="text-xl text-gray-600">
+          Making the management of Your Libaray Easier. Manage your books with
+          ease using our powerful Libaray management system.
+        </p>
+      </section>
+
+      <section class="grid md:grid-cols-2 gap-8 mb-12">
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+            Key Features
+          </h2>
+          <ul class="list-disc list-inside text-gray-600">
+            <li>
+              Retrieve a list of all books available in the library, including
+              their title, author, genre, and publication date.
+            </li>
+            <li>
+              Get the details of a specific book, such as the book’s
+              availability status, edition, and summary.
+            </li>
+            <li>Add new books to the library collection.</li>
+            <li>
+              Update the details of an existing book, including changing its
+              availability (e.g., when it is borrowed or returned).
+            </li>
+            <li>
+              Delete a book when it is lost, damaged, or no longer available in
+              the library.
+            </li>
+          </ul>
+        </div>
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+            Getting Started
+          </h2>
+          <p class="text-gray-600 mb-4">
+            Follow these steps to explore Pman API and consume it into your
+            system:
+          </p>
+          <ol class="list-decimal list-inside text-gray-600">
+            <li>Click on the Explore API documentation below</li>
+            <li>Review our comprehensive documentation</li>
+            <li>Test the API in our sandbox environment</li>
+            <li>Implement the API in your application</li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="bg-white rounded-lg shadow-md p-6 mb-12">
+        <h2 class="text-2xl font-semibold text-gray-800 mb-4">API Endpoints</h2>
+        <div class="overflow-x-auto">
+          <table class="min-w-full">
+            <thead>
+              <tr class="bg-gray-200">
+                <th class="px-4 py-2 text-left text-gray-700">Endpoint</th>
+                <th class="px-4 py-2 text-left text-gray-700">Description</th>
+                <th class="px-4 py-2 text-left text-gray-700">Method</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="border px-4 py-2 text-gray-600">
+                  https://documenter.getpostman.com/view/26434084/2sAY4skQcM/api/v1/books/add
+                </td>
+                <td class="border px-4 py-2 text-gray-600">
+                  Adds a new book to the library collection.
+                </td>
+                <td class="border px-4 py-2 text-gray-600">POST</td>
+              </tr>
+              <tr class="bg-gray-100">
+                <td class="border px-4 py-2 text-gray-600">
+                  https://documenter.getpostman.com/view/26434084/2sAY4skQcM/api/v1/books/all-books
+                </td>
+                <td class="border px-4 py-2 text-gray-600">Get all books</td>
+                <td class="border px-4 py-2 text-gray-600">GET</td>
+              </tr>
+              <tr>
+                <td class="border px-4 py-2 text-gray-600">
+                  https://documenter.getpostman.com/view/26434084/2sAY4skQcM/api/v1/books/671d649d33ed7ba103ed4e45
+                </td>
+                <td class="border px-4 py-2 text-gray-600">
+                  Update the details of an existing book, including changing its
+                  availability (e.g., when it is borrowed or returned).
+                </td>
+                <td class="border px-4 py-2 text-gray-600">PUT</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="text-center">
+        <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+          Ready to get started?
+        </h2>
+        <a
+          href="https://documenter.getpostman.com/view/26434084/2sAY4skQcM"
+          class="inline-block bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg hover:bg-blue-700 transition duration-300"
+          >Explore API Documentation</a
+        >
+      </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white mt-12">
+      <div class="container mx-auto px-6 py-4">
+        <p class="text-center">
+          &copy; 2024 Library System API. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
